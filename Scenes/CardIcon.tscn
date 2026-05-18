@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cvekao1ntq8ir"]
+
+[ext_resource type="Texture2D" uid="uid://bgrxaf0he71tg" path="res://Sprites/CardIcon.png" id="1_7ls7p"]
+[ext_resource type="Script" uid="uid://djf2pj67agfj0" path="res://Scripts/card_icon.gd" id="2_l07qq"]
+
+[node name="CardIcon" type="Sprite2D" unique_id=1065787795]
+texture = ExtResource("1_7ls7p")
+hframes = 2
+script = ExtResource("2_l07qq")

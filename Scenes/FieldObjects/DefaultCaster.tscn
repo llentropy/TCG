@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dgjs05ca8gqo7"]
+
+[ext_resource type="Texture2D" uid="uid://c3vy2hbk4yj7w" path="res://Sprites/DefaultCaster.png" id="1_r8log"]
+
+[node name="DefaultCaster" type="Sprite2D" unique_id=107579710]
+texture = ExtResource("1_r8log")

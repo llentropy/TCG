@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://5dn3pu515eig"]
+
+[ext_resource type="Script" uid="uid://ca75tln8oqc6x" path="res://Scripts/game_manager.gd" id="1_d7u1r"]
+[ext_resource type="PackedScene" uid="uid://bjq0cv11e4eyo" path="res://Scenes/ExpandedCard.tscn" id="2_d7u1r"]
+[ext_resource type="PackedScene" uid="uid://d1tevupj2gxhm" path="res://Scenes/timeline.tscn" id="2_hk5gu"]
+[ext_resource type="Script" uid="uid://b4k3bnsqpqtkj" path="res://Scripts/card_database.gd" id="3_v0llf"]
+[ext_resource type="Script" uid="uid://eigx1w7orjkj" path="res://Scripts/player.gd" id="4_6otve"]
+[ext_resource type="Script" uid="uid://bl1dkgcvax505" path="res://Scripts/opponent.gd" id="5_ib8rl"]
+[ext_resource type="FontFile" uid="uid://dtyhouf0wg8l1" path="res://Resources/CONCHARS.png" id="6_6otve"]
+[ext_resource type="Texture2D" uid="uid://b0rt718b000ks" path="res://Sprites/ArrowIcon.png" id="6_vvuac"]
+[ext_resource type="PackedScene" uid="uid://blv6r655mv8by" path="res://Scenes/FieldObjects/PlayerPortrait.tscn" id="8_y13ar"]
+[ext_resource type="Script" uid="uid://dsjobll6nfyeq" path="res://Scripts/caster.gd" id="9_2jsy2"]
+[ext_resource type="Texture2D" uid="uid://dc6nessf7keip" path="res://Sprites/AltPortrait.png" id="11_qrcwt"]
+
+[node name="PlayingField" type="Node2D" unique_id=255363221]
+
+[node name="UI" type="Control" parent="." unique_id=1165162267]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 160.0
+offset_bottom = 152.0
+
+[node name="DeckSizeUI" type="RichTextLabel" parent="UI" unique_id=47588463]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -56.0
+offset_top = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_fonts/normal_font = ExtResource("6_6otve")
+theme_override_font_sizes/normal_font_size = 8
+text = "Cards 0"
+
+[node name="ExpandedCard" parent="UI" unique_id=2062109559 instance=ExtResource("2_d7u1r")]
+visible = false
+z_index = 9
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -88.0
+offset_right = 2.0
+grow_horizontal = 0
+
+[node name="GameManager" type="Node2D" parent="." unique_id=1812157114]
+script = ExtResource("1_d7u1r")
+
+[node name="Timeline" parent="GameManager" unique_id=1173040738 instance=ExtResource("2_hk5gu")]
+z_index = -1000
+position = Vector2(44, 72)
+
+[node name="CardIconsRoot" type="Node2D" parent="GameManager" unique_id=1870378618]
+
+[node name="CardDatabase" type="Node" parent="GameManager" unique_id=339881093]
+script = ExtResource("3_v0llf")
+
+[node name="Waypoints" type="Node2D" parent="GameManager" unique_id=1863973311]
+
+[node name="PlayerSetCardWaypoint" type="Node2D" parent="GameManager/Waypoints" unique_id=1660278945]
+position = Vector2(8, 96)
+
+[node name="OpponentSetCardWaypoint" type="Node2D" parent="GameManager/Waypoints" unique_id=1467995584]
+position = Vector2(8, 48)
+
+[node name="PlayerHandWaypoint" type="Node2D" parent="GameManager/Waypoints" unique_id=1619580313]
+position = Vector2(8, 136)
+
+[node name="OpponentHandWaypoint" type="Node2D" parent="GameManager/Waypoints" unique_id=1935733484]
+position = Vector2(150, 10)
+
+[node name="SelectorArrow" type="Sprite2D" parent="GameManager" unique_id=765161571]
+z_index = 500
+texture = ExtResource("6_vvuac")
+hframes = 2
+
+[node name="Player" type="Node" parent="GameManager" unique_id=1737421195]
+script = ExtResource("4_6otve")
+
+[node name="Casters" type="Node2D" parent="GameManager/Player" unique_id=314616105]
+
+[node name="PlayerCaster" parent="GameManager/Player/Casters" unique_id=1258269200 instance=ExtResource("8_y13ar")]
+position = Vector2(8, 96)
+script = ExtResource("9_2jsy2")
+
+[node name="PlayerCaster2" parent="GameManager/Player/Casters" unique_id=1259061257 instance=ExtResource("8_y13ar")]
+position = Vector2(24, 96)
+script = ExtResource("9_2jsy2")
+
+[node name="PlayerCaster3" parent="GameManager/Player/Casters" unique_id=1948303098 instance=ExtResource("8_y13ar")]
+position = Vector2(40, 96)
+script = ExtResource("9_2jsy2")
+
+[node name="Opponent" type="Node" parent="GameManager" unique_id=514869433]
+script = ExtResource("5_ib8rl")
+
+[node name="Casters" type="Node2D" parent="GameManager/Opponent" unique_id=1339099278]
+
+[node name="OpponentCaster" parent="GameManager/Opponent/Casters" unique_id=231585752 instance=ExtResource("8_y13ar")]
+position = Vector2(8, 32)
+texture = ExtResource("11_qrcwt")
+script = ExtResource("9_2jsy2")
+
+[node name="OpponentCaster2" parent="GameManager/Opponent/Casters" unique_id=701755492 instance=ExtResource("8_y13ar")]
+position = Vector2(24, 32)
+texture = ExtResource("11_qrcwt")
+script = ExtResource("9_2jsy2")
+
+[connection signal="cards_have_been_set" from="GameManager/Timeline" to="GameManager/Timeline" method="_on_cards_have_been_set"]
+[connection signal="resolved_cards" from="GameManager/Timeline" to="GameManager/Timeline" method="_on_resolved_cards"]
+[connection signal="resolved_cards" from="GameManager/Timeline" to="GameManager/Player" method="_on_timeline_resolved_cards"]
+[connection signal="resolved_cards" from="GameManager/Timeline" to="GameManager/Opponent" method="_on_timeline_resolved_cards"]
+[connection signal="shifted_time" from="GameManager/Timeline" to="GameManager/Timeline" method="_on_shifted_time"]
+[connection signal="turn_ended" from="GameManager/Timeline" to="GameManager/Player" method="_on_timeline_turn_ended"]
+[connection signal="turn_ended" from="GameManager/Timeline" to="GameManager/Opponent" method="_on_timeline_turn_ended"]
+[connection signal="card_has_been_selected" from="GameManager/Player" to="UI/ExpandedCard" method="_on_player_card_has_been_selected"]

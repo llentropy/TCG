@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://blv6r655mv8by"]
+
+[ext_resource type="Texture2D" uid="uid://bi1u0x4f760mb" path="res://Sprites/Portrait.png" id="1_yx3di"]
+
+[node name="PlayerPortrait" type="Sprite2D" unique_id=1258269200]
+texture = ExtResource("1_yx3di")

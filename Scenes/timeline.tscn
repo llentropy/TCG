@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d1tevupj2gxhm"]
+
+[ext_resource type="Texture2D" uid="uid://vwuov5pws874" path="res://Sprites/Timeline.png" id="1_65cdy"]
+[ext_resource type="Script" uid="uid://c8y6l4s0grf5i" path="res://Scripts/timeline.gd" id="2_lkmkd"]
+
+[node name="Timeline" type="Sprite2D" unique_id=1173040738]
+z_index = -5
+texture = ExtResource("1_65cdy")
+script = ExtResource("2_lkmkd")

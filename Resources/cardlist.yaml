@@ -1,0 +1,26 @@
+cards:
+  temple:
+    name: "Temple"
+    type: "Construct"
+    cost: 1
+    text: "+1 to your power"
+  lowerPupil:
+    name: "Monk"
+    type: "Entity"
+    cost: 2
+    text: "Casts cards with +1 cost"
+  hourglass:
+    name: "Hourglass"
+    type: "Construct"
+    cost: 3
+    text: "Your cards cost -1"
+  ultraHourglass:
+    name: "UHourglass"
+    type: "Construct"
+    cost: 6
+    text: "Your cards cost -2"
+  rewind:
+    name: "Boost"
+    type: "Spell"
+    cost: 5
+    text: "Advance your cards +1 time"

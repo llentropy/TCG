@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://5dn3pu515eig"]
+
+[ext_resource type="Script" uid="uid://ca75tln8oqc6x" path="res://Scripts/game_manager.gd" id="1_d7u1r"]
+[ext_resource type="PackedScene" uid="uid://bjq0cv11e4eyo" path="res://Scenes/ExpandedCard.tscn" id="2_d7u1r"]
+[ext_resource type="Script" uid="uid://b4k3bnsqpqtkj" path="res://Scripts/card_database.gd" id="3_v0llf"]
+[ext_resource type="Texture2D" uid="uid://vwuov5pws874" path="res://Sprites/Timeline.png" id="4_dqcrm"]
+[ext_resource type="Script" uid="uid://c8y6l4s0grf5i" path="res://Scripts/timeline.gd" id="5_hk5gu"]
+
+[node name="PlayingField" type="Node2D" unique_id=255363221]
+
+[node name="GameManager" type="Node2D" parent="." unique_id=1812157114]
+position = Vector2(10, 139)
+script = ExtResource("1_d7u1r")
+
+[node name="Timeline" type="Sprite2D" parent="GameManager" unique_id=422209306]
+position = Vector2(-7, -45)
+texture = ExtResource("4_dqcrm")
+offset = Vector2(100, 0)
+script = ExtResource("5_hk5gu")
+
+[node name="ExpandedCard" parent="GameManager" unique_id=2062109559 instance=ExtResource("2_d7u1r")]
+visible = false
+z_index = 9
+offset_left = -4.0
+offset_top = -130.0
+offset_right = 76.0
+offset_bottom = -30.0
+
+[node name="PlayerCardIcons" type="Node2D" parent="GameManager" unique_id=1870378618]
+
+[node name="OpponentCardIcons" type="Node2D" parent="GameManager" unique_id=1571383471]
+position = Vector2(28, -129)
+
+[node name="QueuedCardIcons" type="Node2D" parent="GameManager" unique_id=722081628]
+
+[node name="CardDatabase" type="Node" parent="GameManager" unique_id=339881093]
+script = ExtResource("3_v0llf")
