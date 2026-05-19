@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://5dn3pu515eig"]
 
 [ext_resource type="Script" uid="uid://ca75tln8oqc6x" path="res://Scripts/game_manager.gd" id="1_d7u1r"]
-[ext_resource type="PackedScene" uid="uid://bjq0cv11e4eyo" path="res://Scenes/ExpandedCard.tscn" id="2_d7u1r"]
-[ext_resource type="PackedScene" uid="uid://d1tevupj2gxhm" path="res://Scenes/timeline.tscn" id="2_hk5gu"]
+[ext_resource type="PackedScene" uid="uid://bjq0cv11e4eyo" path="res://Scenes/CardGame/ExpandedCard.tscn" id="2_d7u1r"]
+[ext_resource type="PackedScene" uid="uid://d1tevupj2gxhm" path="res://Scenes/CardGame/timeline.tscn" id="2_hk5gu"]
 [ext_resource type="Script" uid="uid://b4k3bnsqpqtkj" path="res://Scripts/card_database.gd" id="3_v0llf"]
 [ext_resource type="Script" uid="uid://eigx1w7orjkj" path="res://Scripts/player.gd" id="4_6otve"]
 [ext_resource type="Script" uid="uid://bl1dkgcvax505" path="res://Scripts/opponent.gd" id="5_ib8rl"]
 [ext_resource type="FontFile" uid="uid://dtyhouf0wg8l1" path="res://Resources/CONCHARS.png" id="6_6otve"]
 [ext_resource type="Texture2D" uid="uid://b0rt718b000ks" path="res://Sprites/ArrowIcon.png" id="6_vvuac"]
-[ext_resource type="PackedScene" uid="uid://blv6r655mv8by" path="res://Scenes/FieldObjects/PlayerPortrait.tscn" id="8_y13ar"]
+[ext_resource type="PackedScene" uid="uid://blv6r655mv8by" path="res://Scenes/CardGame/FieldObjects/PlayerPortrait.tscn" id="8_y13ar"]
 [ext_resource type="Script" uid="uid://dsjobll6nfyeq" path="res://Scripts/caster.gd" id="9_2jsy2"]
 [ext_resource type="Texture2D" uid="uid://dc6nessf7keip" path="res://Sprites/AltPortrait.png" id="11_qrcwt"]
 
