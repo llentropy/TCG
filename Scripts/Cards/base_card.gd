@@ -1,11 +1,11 @@
 class_name Card
 extends Node
 
-enum CardTypes {Entity, Construct, Spell}
+enum CardTypes {Caster, Struct, Spell}
 
 @export var cardName: String = "Default"
 @export var cost: int = 0
-@export var cardType: CardTypes = CardTypes.Entity
+@export var cardType: CardTypes = CardTypes.Caster
 @export var cardText: String = "Default"
 var card_index : int 
 var card_owner : String

@@ -44,8 +44,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -88.0
-offset_right = 2.0
+offset_left = -100.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 129.0
 grow_horizontal = 0
 
 [node name="GameManager" type="Node2D" parent="." unique_id=1812157114]

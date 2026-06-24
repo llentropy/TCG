@@ -11,7 +11,8 @@ func update_card(card: Card) -> void :
 	card_cost.text = str(card.cost)
 	card_type.text = card.CardTypes.find_key(card.cardType)
 	card_text.text = card.cardText
-	var art_path = "res://Sprites/CardArts/" + str(card.card_index) +".png"
+	var art_path = "res://Sprites/CardArts/CardArts" + str(card.card_index+1) +".png"
+	
 	card_art.texture = load(art_path)
 
 

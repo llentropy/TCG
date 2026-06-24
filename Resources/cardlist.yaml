@@ -1,26 +1,123 @@
 cards:
-  temple:
-    name: "Temple"
-    type: "Construct"
-    cost: 1
-    text: "+1 to your power"
-  lowerPupil:
+  monk:
     name: "Monk"
-    type: "Entity"
-    cost: 2
+    type: "Caster"
+    cost: 3
     text: "Casts cards with +1 cost"
+  higherMonk:
+    name: "Higher Monk"
+    type: "Caster"
+    cost: 2
+    text: "On resolve: Sacrifice a monk or requeue. Casts cards with -1 cost"
+  cowCaster:
+    name: "Cow Caster"
+    type: "Caster"
+    cost: 3
+    text: "Casts cards with 0 cost. When a card is cast by this: sacrifice this"
+  wonderMage:
+    name: "Wonder Mage"
+    type: "Caster"
+    cost: 4
+    text: "Casts cards with -1 cost"
+  fireMage:
+    name: "Fire Mage"
+    type: Caster
+    cost: 5
+    text: "On resolve: Destroy another card in play. 
+            Casts cards with +1 cost"
+  eastTemple:
+    name: "East Temple"
+    type: "Struct"
+    cost: 1
+    text: "+1 aura while in play"
+  westTemple:
+    name: "West Temple"
+    type: "Struct"
+    cost: 1
+    text: "+1 aura while in play"
+  northTemple:
+    name: "North Temple"
+    type: "Struct"
+    cost: 1
+    text: "+1 aura while in play"
+  southTemple:
+    name: "South Temple"
+    type: "Struct"
+    cost: 1
+    text: "+1 aura while in play"
+  lostTemple:
+    name: "Temple Quest"
+    type: "Spell"
+    cost: 3
+    text: "Choose a temple from deck and put it into play if it's a struct. If not, swap with a card in hand, shuffle"
+  auraFarm:
+    name: "Aura Farm"
+    type: "Struct"
+    cost: 5
+    text: "Each card you cast gives +1 aura"
   hourglass:
     name: "Hourglass"
-    type: "Construct"
-    cost: 3
+    type: "Struct"
+    cost: 5
     text: "Your cards cost -1"
   ultraHourglass:
-    name: "UHourglass"
-    type: "Construct"
+    name: "Ultra Hourglass"
+    type: "Struct"
     cost: 6
     text: "Your cards cost -2"
-  rewind:
+  timeMachine:
+    name: "Time Machine"
+    type: "Struct"
+    cost: 4
+    text: "When you resolve a card, you may requeue it, then sacrifice this"
+  auraSun:
+    name: "Aura Sun"
+    type: "Struct"
+    cost: 7
+    text: "Each turn, gain +1 aura for each of your queued cards"
+  boost:
     name: "Boost"
     type: "Spell"
+    cost: 2
+    text: "Shift your cards +1 time"
+  rewind:
+    name: "Rewind"
+    type: "Spell"
+    cost: 2
+    text: "Shift your opponents' cards -1 time"
+  templeTune:
+    name: "Temple domain"
+    type: "Spell"
+    cost: 3
+    text: "If you control 4 temples with different names: +6 aura. Otherwise, requeue"
+  reset:
+    name: "Reset"
+    type: "Spell"
+    cost: 4
+    text: "Requeues all spells and destroy spells with X cost"
+  Destroy:
+    name: "Destroy"
+    type: "Spell"
+    cost: 3
+    text: "Destroy a card in play"
+  counter:
+    name: "Counter"
+    type: "Spell"
+    cost: 2
+    text: "Put a queued spell into its owner's discard pile"
+  discover:
+    name: "Temple tune"
+    type: "Spell"
     cost: 5
-    text: "Advance your cards +1 time"
+    text: "Costs 1 less for each temple you own. Search deck for a card, swap with one in hand, shuffle"
+  remember:
+    name: "Remember"
+    type: "Spell"
+    cost: 3
+    text: "Swap a card in your hand with one in your discard pile"
+  concentrate:
+    name: "Concentrate"
+    type: "Spell"
+    cost: 2
+    text: "Gain +2 aura"
+  

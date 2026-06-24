@@ -1,7 +1,7 @@
 class_name GameParticipant
 extends Node
 
-var card_icon_scene = load("res://Scenes/CardIcon.tscn")
+var card_icon_scene = load("res://Scenes/CardGame/CardIcon.tscn")
 var participant_name : String
 var decklist : Array[int] = []
 var deck : Array[Card]
