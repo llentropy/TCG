@@ -8,7 +8,10 @@ extends TextureRect
 
 func update_card(card: Card) -> void :
 	card_name.text = card.cardName
-	card_cost.text = str(card.cost)
+	if card.is_x_cost:
+		card_cost.text = 'X'
+	else:
+		card_cost.text = str(card.cost)
 	card_type.text = card.CardTypes.find_key(card.cardType)
 	card_text.text = card.cardText
 	var art_path = "res://Sprites/CardArts/CardArts" + str(card.card_index+1) +".png"

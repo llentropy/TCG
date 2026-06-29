@@ -3,6 +3,8 @@ extends Node2D
 @onready var card_database = $UI/CardDatabase
 @onready var expanded_card = $UI/ExpandedCard
 
+var folder_path = OS.get_system_dir(OS.SYSTEM_DIR_PICTURES)
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
@@ -38,11 +40,12 @@ func print_onto_subviewport(card_index : int) :
 	var image_data : Image = viewport_texture.get_image()
 	var scaling_factor = 6
 	image_data.resize(image_data.get_width() * scaling_factor, image_data.get_height() * scaling_factor,Image.INTERPOLATE_NEAREST)
+	
 	viewport.remove_child(expanded_card)
 	original_parent.add_child(expanded_card)
 	original_parent.move_child(expanded_card, original_index)
 	expanded_card.position = original_position
 	
 	
-	image_data.save_png("user://Screenshot_card_%02d.png" % card_index)
+	image_data.save_png( folder_path + "/TimeCasterGauntlet/Screenshot_card_" +str(card_index) + ".png")
 	viewport.queue_free()

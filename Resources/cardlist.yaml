@@ -23,8 +23,7 @@ cards:
     name: "Fire Mage"
     type: Caster
     cost: 5
-    text: "On resolve: Destroy another card in play. 
-            Casts cards with +1 cost"
+    text: "On resolve: Destroy another card in play.\nCasts cards with +1 cost"
   eastTemple:
     name: "East Temple"
     type: "Struct"
@@ -84,8 +83,8 @@ cards:
     name: "Rewind"
     type: "Spell"
     cost: 2
-    text: "Shift your opponents' cards -1 time"
-  templeTune:
+    text: "Shift your opponent's cards -1 time"
+  templeDomain:
     name: "Temple domain"
     type: "Spell"
     cost: 3
@@ -93,9 +92,9 @@ cards:
   reset:
     name: "Reset"
     type: "Spell"
-    cost: 4
-    text: "Requeues all spells and destroy spells with X cost"
-  Destroy:
+    cost: 2
+    text: "Destroy each spell with X cost, then requeue all spells"
+  destroy:
     name: "Destroy"
     type: "Spell"
     cost: 3
@@ -104,9 +103,9 @@ cards:
     name: "Counter"
     type: "Spell"
     cost: 2
-    text: "Put a queued spell into its owner's discard pile"
-  discover:
-    name: "Temple tune"
+    text: "Destroy a queued card"
+  templeTune:
+    name: "Temple Tune"
     type: "Spell"
     cost: 5
     text: "Costs 1 less for each temple you own. Search deck for a card, swap with one in hand, shuffle"
@@ -119,5 +118,74 @@ cards:
     name: "Concentrate"
     type: "Spell"
     cost: 2
-    text: "Gain +2 aura"
-  
+    text: "Gain +3 aura"
+  corruptSanctuary:
+    name: "Corrupt Sanctuary"
+    type: "Struct"
+    cost: 3
+    text: "Your opponent needs 2 more aura to win the game"
+  restorePast:
+    name: "Restore Past"
+    type: "Spell"
+    cost: 7
+    text: "Enqueue all cards in your discard pile"
+  rebalance:
+    name: "Rebalance"
+    type: "Spell"
+    cost: 3
+    text: "If your opponent has more aura: gain +1 aura. Requeue"
+  timeResonance:
+    name: "Time resonance"
+    type: "Spell"
+    cost: 5
+    text: "If you have a card in at least 5 different lanes: gain +10 aura"
+  substitute:
+    name: "Substitute"
+    type: "Spell"
+    cost: 1
+    text: "Destroy a card in play or on the timeline. Your opponent enqueues the top card of their deck"
+  copyCaster:
+    name: "Copy caster"
+    type: "Caster"
+    cost: 3
+    text: "On resolve: this becomes a copy of a caster in play"
+  ex-caster:
+    name: "Retired Mage"
+    type: "Caster"
+    cost: 1
+    text: "Casts cards with +3 cost"
+  omegaMage:
+    name: "Omega Mage"
+    type: 'Caster'
+    cost: 6
+    text: "Casts cards with -2 cost"
+  seventhRitual:
+    name: "Seventh Ritual"
+    type: "Spell"
+    cost: 7
+    text: "Gain +7 aura"
+  materialize:
+    name: "Materialize"
+    type: "Spell"
+    cost: 2
+    text: "Resolve a struct card on the timeline"
+  abstract:
+    name: "Abstract"
+    type: "Spell"
+    cost: 1
+    text: "Choose a struct in play. It loses its abilities and gains the type 'Concept'"
+  auraRelay:
+    name: "Aura Relay"
+    type: "Spell"
+    cost: 'X'
+    text: "On shift: gain +1 aura if this lane is odd.\nOn resolve: gain +1 aura"
+  auraDrain:
+    name: "Aura Drain"
+    type: "Spell"
+    cost: 'X'
+    text: "On shift: opponent gains -1 aura.\nOn resolve: gain -7 aura"
+  getOnTrack:
+    name: "Get on Track"
+    type: "Spell"
+    cost: 1
+    text: "Destroy all spells with requeue. Gain priority"
