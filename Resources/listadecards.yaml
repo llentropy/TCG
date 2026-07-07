@@ -1,0 +1,191 @@
+cards:
+  monk:
+    name: "Monge"
+    type: "Caster"
+    cost: 3
+    text: "Joga cartas com custo +1"
+  higherMonk:
+    name: "Monge Ascendido"
+    type: "Caster"
+    cost: 2
+    text: "Resolver: Sacrifique um monge ou rejogue. Joga cartas com custo -1"
+  cowCaster:
+    name: "Vaca Conjuradora"
+    type: "Caster"
+    cost: 3
+    text: "Joga cartas com custo 0. Quando ela jogar uma carta: sacrifique-a"
+  wonderMage:
+    name: "Mago Maravilha"
+    type: "Caster"
+    cost: 4
+    text: "Joga cartas com custo -1"
+  fireMage:
+    name: "Mago de fogo"
+    type: Caster
+    cost: 5
+    text: "Resolver: Destrua outra carta em jogo.\nJoga cartas com custo +1"
+  eastTemple:
+    name: "Templo do Leste"
+    type: "Struct"
+    cost: 1
+    text: "Você tem +1 aura"
+  westTemple:
+    name: "Templo do Oeste"
+    type: "Struct"
+    cost: 1
+    text: "Você tem +1 aura"
+  northTemple:
+    name: "Templo do Norte"
+    type: "Struct"
+    cost: 1
+    text: "Você tem +1 aura"
+  southTemple:
+    name: "Templo do\nSul"
+    type: "Struct"
+    cost: 1
+    text: "Você tem +1 aura"
+  lostTemple:
+    name: "Busca do Templo"
+    type: "Spell"
+    cost: 3
+    text: "Escolha um Templo do deck. Se for struct, coloque em jogo; Senão, troque-o com uma carta da mão e embaralhe"
+  auraFarm:
+    name: "Fazenda de Aura"
+    type: "Struct"
+    cost: 5
+    text: "Ganhe +1 aura para cada card que jogar"
+  hourglass:
+    name: "Ampulheta"
+    type: "Struct"
+    cost: 5
+    text: "Suas cartas custam -1"
+  ultraHourglass:
+    name: "Ultra Ampulheta"
+    type: "Struct"
+    cost: 6
+    text: "Suas cartas custam -2"
+  timeMachine:
+    name: "Máquina do Tempo"
+    type: "Struct"
+    cost: 4
+    text: "Ao resolver uma carta, você pode rejogá-la e sacrificar isto"
+  auraSun:
+    name: "Sol de Aura"
+    type: "Struct"
+    cost: 7
+    text: "A cada turno, ganhe +1 aura para cada carta sua na timeline"
+  boost:
+    name: "Avançar"
+    type: "Spell"
+    cost: 2
+    text: "Desloque suas cartas na timeline +1 tempo"
+  rewind:
+    name: "Retroceder"
+    type: "Spell"
+    cost: 2
+    text: "Desloque as cartas do oponente na timeline -1 tempo"
+  templeDomain:
+    name: "Domínio de Templo"
+    type: "Spell"
+    cost: 3
+    text: "Se você controla 4 Templos com nomes diferentes: ganhe +6 aura. Senão, rejogue"
+  reset:
+    name: "Reset"
+    type: "Spell"
+    cost: 2
+    text: "Destrua cada carta de custo X, então cada jogador rejoga suas cartas na timeline"
+  destroy:
+    name: "Destruir"
+    type: "Spell"
+    cost: 3
+    text: "Destrua uma carta em jogo"
+  counter:
+    name: "Anular"
+    type: "Spell"
+    cost: 2
+    text: "Destrua uma carta na timeline"
+  templeTune:
+    name: "Sintonizar Templo"
+    type: "Spell"
+    cost: 5
+    text: "Custa -1 para cada Templo seu. Escolha 1 carta no deck, troque por 1 carta na mão, embaralhe"
+  remember:
+    name: "Lembrar"
+    type: "Spell"
+    cost: 3
+    text: "Troque 1 carta da sua mão com 1 carta em seu descarte"
+  concentrate:
+    name: "Concentrate"
+    type: "Spell"
+    cost: 2
+    text: "Gain +3 aura"
+  corruptSanctuary:
+    name: "Corrupt Sanctuary"
+    type: "Struct"
+    cost: 3
+    text: "Your opponent needs 2 more aura to win the game"
+  restorePast:
+    name: "Restore Past"
+    type: "Spell"
+    cost: 7
+    text: "Enqueue all cards in your discard pile"
+  rebalance:
+    name: "Rebalance"
+    type: "Spell"
+    cost: 3
+    text: "If your opponent has more aura: gain +1 aura. Requeue"
+  timeResonance:
+    name: "Time resonance"
+    type: "Spell"
+    cost: 5
+    text: "If you have a card in at least 5 different lanes: gain +10 aura"
+  substitute:
+    name: "Substitute"
+    type: "Spell"
+    cost: 1
+    text: "Destroy a card in play or on the timeline. Your opponent enqueues the top card of their deck"
+  copyCaster:
+    name: "Copy caster"
+    type: "Caster"
+    cost: 3
+    text: "On resolve: this becomes a copy of a caster in play"
+  ex-caster:
+    name: "Retired Mage"
+    type: "Caster"
+    cost: 1
+    text: "Casts cards with +3 cost"
+  omegaMage:
+    name: "Omega Mage"
+    type: 'Caster'
+    cost: 6
+    text: "Casts cards with -2 cost"
+  seventhRitual:
+    name: "Seventh Ritual"
+    type: "Spell"
+    cost: 7
+    text: "Gain +7 aura"
+  materialize:
+    name: "Materialize"
+    type: "Spell"
+    cost: 2
+    text: "Resolve a struct card on the timeline"
+  abstract:
+    name: "Abstract"
+    type: "Spell"
+    cost: 1
+    text: "Choose a struct in play. It becomes a card with the type 'Concept'"
+  auraRelay:
+    name: "Aura Relay"
+    type: "Spell"
+    cost: 'X'
+    text: "On shift: gain +1 aura if this lane is odd.\nOn resolve: gain +1 aura"
+  auraDrain:
+    name: "Aura Drain"
+    type: "Spell"
+    cost: 'X'
+    text: "On shift: opponent gains -1 aura.\nOn resolve: gain -7 aura"
+  getOnTrack:
+    name: "Get on Track"
+    type: "Spell"
+    cost: 1
+    text: "Destroy all spells with requeue. Gain priority"

@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/CONCHARS.png-ac6b23b624319dbce2fd85e6022e91d4
 
 [params]
 
-character_ranges=PackedStringArray("0-127")
-kerning_pairs=PackedStringArray()
+character_ranges=PackedStringArray("0-256")
+kerning_pairs=PackedStringArray("l t -2", "l abcdefghijklmnopqrsuvwxyzãâáàéêõóôABCDEFGHIJLMNOPQRSUVWXYZÃÂÁÀÉÊÕÓÔ -1", "abcdefghijklmnopqrsuvwxyzãâáàéêõóôABCDEFGHIJLMNOPQRSUVWXYZÃÂÁÀÉÊÕÓÔ . -1", "abcdefghijklmnopqrsuvwxyzãâáàéêõóôABCDEFGHIJLMNOPQRSUVWXYZÃÂÁÀÉÊÕÓÔ , -2")
 columns=16
 rows=16
 image_margin=Rect2i(0, 0, 0, 0)

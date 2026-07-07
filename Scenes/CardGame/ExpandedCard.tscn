@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://441spb0asmrw" path="res://Sprites/ExpandedCard.png" id="1_3ww4k"]
 [ext_resource type="Script" uid="uid://brwgqn751n72r" path="res://Scripts/card_preview.gd" id="2_wk3kn"]
+[ext_resource type="FontVariation" uid="uid://dyngmvjuqawoy" path="res://Resources/conchars_var.tres" id="3_82raa"]
 [ext_resource type="FontFile" uid="uid://dtyhouf0wg8l1" path="res://Resources/CONCHARS.png" id="3_wk3kn"]
 [ext_resource type="Texture2D" uid="uid://c76v2trnx53gd" path="res://Sprites/CardArts/0.png" id="4_w5ka5"]
 
@@ -18,10 +19,9 @@ offset_top = 2.0
 offset_right = 86.0
 offset_bottom = 18.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_wk3kn")
+theme_override_fonts/normal_font = ExtResource("3_82raa")
 theme_override_font_sizes/normal_font_size = 8
 bbcode_enabled = true
-text = "CardName"
 scroll_active = false
 vertical_alignment = 1
 
@@ -77,11 +77,32 @@ offset_top = -14.290009
 offset_right = 95.84
 offset_bottom = 50.70999
 theme_override_colors/default_color = Color(1, 1, 1, 1)
-theme_override_fonts/normal_font = ExtResource("3_wk3kn")
+theme_override_fonts/normal_font = ExtResource("3_82raa")
 theme_override_font_sizes/normal_font_size = 8
 bbcode_enabled = true
-text = "On cast: Destroy another card in play. 
-            Casts cards with +1 cost"
+text = "Temple tune"
+scroll_active = false
+tab_size = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 131
+
+[node name="CardId" type="RichTextLabel" parent="." unique_id=1209829322]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.040000003
+anchor_top = 0.60200006
+anchor_right = 0.040000003
+anchor_bottom = 0.60200006
+offset_left = 57.84
+offset_top = 49.70999
+offset_right = 95.84
+offset_bottom = 57.70999
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_82raa")
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "23/40"
 scroll_active = false
 tab_size = 2
 horizontal_alignment = 1

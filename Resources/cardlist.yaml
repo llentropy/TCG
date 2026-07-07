@@ -3,57 +3,57 @@ cards:
     name: "Monk"
     type: "Caster"
     cost: 3
-    text: "Casts cards with +1 cost"
+    text: "Plays cards with +1 cost"
   higherMonk:
     name: "Higher Monk"
     type: "Caster"
     cost: 2
-    text: "On resolve: Sacrifice a monk or requeue. Casts cards with -1 cost"
+    text: "On resolve: Sacrifice a monk or Replay. Plays cards with -1 cost"
   cowCaster:
     name: "Cow Caster"
     type: "Caster"
     cost: 3
-    text: "Casts cards with 0 cost. When a card is cast by this: sacrifice this"
+    text: "Plays cards with 0 cost. When this plays a card: sacrifice this"
   wonderMage:
     name: "Wonder Mage"
     type: "Caster"
     cost: 4
-    text: "Casts cards with -1 cost"
+    text: "Plays cards with -1 cost"
   fireMage:
     name: "Fire Mage"
     type: Caster
     cost: 5
-    text: "On resolve: Destroy another card in play.\nCasts cards with +1 cost"
+    text: "On resolve: Destroy another card in play.\nPlays cards with +1 cost"
   eastTemple:
     name: "East Temple"
     type: "Struct"
     cost: 1
-    text: "+1 aura while in play"
+    text: "You have +1 aura"
   westTemple:
     name: "West Temple"
     type: "Struct"
     cost: 1
-    text: "+1 aura while in play"
+    text: "You have +1 aura"
   northTemple:
     name: "North Temple"
     type: "Struct"
     cost: 1
-    text: "+1 aura while in play"
+    text: "You have +1 aura"
   southTemple:
     name: "South Temple"
     type: "Struct"
     cost: 1
-    text: "+1 aura while in play"
-  lostTemple:
+    text: "You have +1 aura"
+  templeQuest:
     name: "Temple Quest"
     type: "Spell"
     cost: 3
-    text: "Choose a temple from deck and put it into play if it's a struct. If not, swap with a card in hand, shuffle"
+    text: "Choose a temple from deck. If it's a struct, put it into play. If not, swap it with a card in hand, shuffle"
   auraFarm:
     name: "Aura Farm"
     type: "Struct"
     cost: 5
-    text: "Each card you cast gives +1 aura"
+    text: "Each card your team plays gives +1 aura"
   hourglass:
     name: "Hourglass"
     type: "Struct"
@@ -68,32 +68,32 @@ cards:
     name: "Time Machine"
     type: "Struct"
     cost: 4
-    text: "When you resolve a card, you may requeue it, then sacrifice this"
+    text: "When you resolve a card, you may Replay it, then sacrifice this"
   auraSun:
     name: "Aura Sun"
     type: "Struct"
     cost: 7
-    text: "Each turn, gain +1 aura for each of your queued cards"
+    text: "Each turn, gain +1 aura for each of your cards on the timeline"
   boost:
     name: "Boost"
     type: "Spell"
     cost: 2
-    text: "Shift your cards +1 time"
+    text: "Shift your cards on the timeline +1 time"
   rewind:
     name: "Rewind"
     type: "Spell"
     cost: 2
-    text: "Shift your opponent's cards -1 time"
+    text: "Shift your opponent's cards on the timeline -1 time"
   templeDomain:
     name: "Temple domain"
     type: "Spell"
     cost: 3
-    text: "If you control 4 temples with different names: +6 aura. Otherwise, requeue"
+    text: "If you control 4 temples with different names: +6 aura. Otherwise, Replay"
   reset:
     name: "Reset"
     type: "Spell"
     cost: 2
-    text: "Destroy each spell with X cost, then requeue all spells"
+    text: "Destroy each spell with X cost, then each player Replays their spells"
   destroy:
     name: "Destroy"
     type: "Spell"
@@ -103,7 +103,7 @@ cards:
     name: "Counter"
     type: "Spell"
     cost: 2
-    text: "Destroy a queued card"
+    text: "Destroy a card on the timeline"
   templeTune:
     name: "Temple Tune"
     type: "Spell"
@@ -125,15 +125,15 @@ cards:
     cost: 3
     text: "Your opponent needs 2 more aura to win the game"
   restorePast:
-    name: "Restore Past"
+    name: "Restore the Past"
     type: "Spell"
     cost: 7
-    text: "Enqueue all cards in your discard pile"
+    text: "Play all cards in your discard pile"
   rebalance:
     name: "Rebalance"
     type: "Spell"
     cost: 3
-    text: "If your opponent has more aura: gain +1 aura. Requeue"
+    text: "If your opponent has more aura: gain +1 aura. Replay"
   timeResonance:
     name: "Time resonance"
     type: "Spell"
@@ -143,7 +143,7 @@ cards:
     name: "Substitute"
     type: "Spell"
     cost: 1
-    text: "Destroy a card in play or on the timeline. Your opponent enqueues the top card of their deck"
+    text: "Destroy a card in play or on the timeline. Your opponent plays the top card of their deck"
   copyCaster:
     name: "Copy caster"
     type: "Caster"
@@ -153,12 +153,12 @@ cards:
     name: "Retired Mage"
     type: "Caster"
     cost: 1
-    text: "Casts cards with +3 cost"
+    text: "Plays cards with +3 cost"
   omegaMage:
     name: "Omega Mage"
     type: 'Caster'
     cost: 6
-    text: "Casts cards with -2 cost"
+    text: "Plays cards with -2 cost"
   seventhRitual:
     name: "Seventh Ritual"
     type: "Spell"
@@ -173,7 +173,7 @@ cards:
     name: "Abstract"
     type: "Spell"
     cost: 1
-    text: "Choose a struct in play. It loses its abilities and gains the type 'Concept'"
+    text: "Choose a struct in play. It becomes a card with the type 'Concept'"
   auraRelay:
     name: "Aura Relay"
     type: "Spell"
@@ -188,4 +188,44 @@ cards:
     name: "Get on Track"
     type: "Spell"
     cost: 1
-    text: "Destroy all spells with requeue. Gain priority"
+    text: "Destroy all spells with Replay. Gain priority"
+  inviteTheVoid:
+    name: "Invite the Void"
+    type: "Spell"
+    cost: 2
+    text: "Discard\nyour\nhand"
+  timeInverter:
+    name: "Time Inverter"
+    type: "Struct"
+    cost: 5
+    text: "Time flows in reverse. (Resolve cards in lane 7)"
+  famousDreamer:
+    name: "Famous Dreamer"
+    type: "Caster"
+    cost: 4
+    text: "On resolve: Swap top card of your deck with card outside the game. Plays cards with +2 cost"
+  inviteTheDreams:
+    name: "Invite the Dreams"
+    type: "Spell"
+    cost: 7
+    text: "Swap your hand with the same number of cards from outside the game"
+  ram:
+    name: "REM Astral Machine"
+    type: "Struct"
+    cost: 3
+    text: "You have +1 hand size"
+  magicPurger:
+    name: "Magic Purger"
+    type: "Struct"
+    cost: 3
+    text: "On cast: destroy all casters in play and on timeline.\nCasters can't be played"
+  goblinMage:
+    name: "Goblin Mage"
+    type: "Caster"
+    cost: 4
+    text: "Plays cards with +4 cost.\nIf it plays Concentrate or Remember, double its effect"
+  LostTemple:
+    name: "Lost Temple"
+    type: "Struct"
+    cost: 4
+    text: "You have +1 aura for each of your other temples"
