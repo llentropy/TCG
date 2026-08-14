@@ -210,7 +210,7 @@ cards:
     cost: 7
     text: "Swap your hand with the same number of cards from outside the game"
   ram:
-    name: "REM Astral Machine"
+    name: "Restored Astral Machine"
     type: "Struct"
     cost: 3
     text: "You have +1 hand size"
