@@ -1,7 +1,9 @@
 class_name CardDatabase
 extends Node
 
-const YAML_FILE_PATH = "res://Resources/cardlist.yaml"
+#const YAML_FILE_PATH = "res://Resources/cardlist.yaml"
+const YAML_FILE_PATH = "res://Resources/listadecards.yaml"
+
 static var possible_cards = {}
 
 func _ready() -> void:

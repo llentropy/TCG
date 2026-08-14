@@ -115,50 +115,50 @@ cards:
     cost: 3
     text: "Troque 1 carta da sua mão com 1 carta em seu descarte"
   concentrate:
-    name: "Concentrate"
+    name: "Concentrar-se"
     type: "Spell"
     cost: 2
-    text: "Gain +3 aura"
+    text: "Ganhe +3 aura"
   corruptSanctuary:
-    name: "Corrupt Sanctuary"
+    name: "Santuario Corrompido"
     type: "Struct"
     cost: 3
-    text: "Your opponent needs 2 more aura to win the game"
+    text: "Seu oponente precisa de +2 aura para ganhar o jogo"
   restorePast:
-    name: "Restore Past"
+    name: "Restaurar Passado"
     type: "Spell"
     cost: 7
-    text: "Enqueue all cards in your discard pile"
+    text: "Jogue todos os seus cards que estão em seu descarte"
   rebalance:
-    name: "Rebalance"
+    name: "Rebalancear"
     type: "Spell"
     cost: 3
-    text: "If your opponent has more aura: gain +1 aura. Requeue"
+    text: "Se seu oponente possui mais aura: ganhe +1 aura. Rejogue"
   timeResonance:
-    name: "Time resonance"
+    name: "Ressonancia Temporal"
     type: "Spell"
     cost: 5
-    text: "If you have a card in at least 5 different lanes: gain +10 aura"
+    text: "Se você tem pelo menos 5 cards em pilhas diferentes: Ganhe +10 aura"
   substitute:
-    name: "Substitute"
+    name: "Substituir"
     type: "Spell"
     cost: 1
-    text: "Destroy a card in play or on the timeline. Your opponent enqueues the top card of their deck"
+    text: "Destrua um card em jogo ou na timeline. Seu oponente joga o card do topo de seu deck"
   copyCaster:
-    name: "Copy caster"
+    name: "Conjurador Duplicado"
     type: "Caster"
     cost: 3
-    text: "On resolve: this becomes a copy of a caster in play"
+    text: "Ao resolver: Isto se torna uma cópia de outro Caster em jogo"
   ex-caster:
-    name: "Retired Mage"
+    name: "Mago aposentado"
     type: "Caster"
     cost: 1
-    text: "Casts cards with +3 cost"
+    text: "Joga cartas com custo +3"
   omegaMage:
-    name: "Omega Mage"
+    name: "Mago Omega"
     type: 'Caster'
     cost: 6
-    text: "Casts cards with -2 cost"
+    text: "Joga cartas com custo -2"
   seventhRitual:
     name: "Seventh Ritual"
     type: "Spell"

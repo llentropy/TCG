@@ -88,6 +88,7 @@ vertical_alignment = 1
 justification_flags = 131
 
 [node name="CardId" type="RichTextLabel" parent="." unique_id=1209829322]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.040000003
