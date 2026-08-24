@@ -8,7 +8,7 @@ cards:
     name: "Higher Monk"
     type: "Caster"
     cost: 2
-    text: "On resolve: Sacrifice a monk or Replay. Plays cards with -1 cost"
+    text: "On resolve: Sacrifice a Monk or Replay. Plays cards with -1 cost"
   cowCaster:
     name: "Cow Caster"
     type: "Caster"
@@ -188,9 +188,9 @@ cards:
     name: "Get on Track"
     type: "Spell"
     cost: 1
-    text: "Destroy all spells with Replay. Gain priority"
+    text: "Destroy all cards with Replay or with X cost. Gain priority"
   inviteTheVoid:
-    name: "Invite the Void"
+    name: "Invite to the Void"
     type: "Spell"
     cost: 2
     text: "Discard\nyour\nhand"
@@ -198,34 +198,54 @@ cards:
     name: "Time Inverter"
     type: "Struct"
     cost: 5
-    text: "Time flows in reverse. (Resolve cards in lane 7)"
+    text: "Time flows in reverse\n(Cards resolve at lane 7)"
   famousDreamer:
     name: "Famous Dreamer"
     type: "Caster"
     cost: 4
     text: "On resolve: Swap top card of your deck with card outside the game. Plays cards with +2 cost"
   inviteTheDreams:
-    name: "Invite the Dreams"
+    name: "Invite to Dreams"
     type: "Spell"
     cost: 7
     text: "Swap your hand with the same number of cards from outside the game"
   ram:
-    name: "Restored Astral Machine"
+    name: "Restored Astralmatic"
     type: "Struct"
     cost: 3
     text: "You have +1 hand size"
   magicPurger:
-    name: "Magic Purger"
+    name: "Magic Prison"
     type: "Struct"
     cost: 3
-    text: "On cast: destroy all casters in play and on timeline.\nCasters can't be played"
+    text: "On resolve: destroy all casters in play and on timeline.\nCasters can't be played"
   goblinMage:
     name: "Goblin Mage"
     type: "Caster"
     cost: 4
-    text: "Plays cards with +4 cost.\nIf it plays Concentrate or Remember, double its effect"
+    text: "Plays cards with +4 cost.\nIf they play [Concentrate] or [Remember], double its effect"
   LostTemple:
-    name: "Lost Temple"
+    name: "Twisted Temple"
     type: "Struct"
     cost: 4
     text: "You have +1 aura for each of your other temples"
+  AuraConverter:
+    name: "Aura Converter"
+    type: "Struct"
+    cost: 3
+    text: "If a card you control would resolve, you may discard it and gain +1 aura"
+  TwinMonks:
+    name: "Twin Monks"
+    type: "Caster"
+    cost: 7
+    text: "Can play two cards per turn"
+  MonkTrainee:
+    name: "Monk Trainee"
+    type: "Caster"
+    cost: 1
+    text: "Can only play cards if you control another caster. Plays cards with +3 cost"
+  MonkCalling:
+    name: "Monk's Calling"
+    type: "Spell"
+    cost: 3
+    text: "Sacrifice a non-Monk caster or replay. Search deck for a Monk caster and put it into play"

@@ -8,7 +8,7 @@ cards:
     name: "Monge Ascendido"
     type: "Caster"
     cost: 2
-    text: "Resolver: Sacrifique um monge ou rejogue. Joga cartas com custo -1"
+    text: "Ao resolver: Sacrifique um monge ou rejogue. Joga cartas com custo -1"
   cowCaster:
     name: "Vaca Conjuradora"
     type: "Caster"
@@ -23,7 +23,7 @@ cards:
     name: "Mago de fogo"
     type: Caster
     cost: 5
-    text: "Resolver: Destrua outra carta em jogo.\nJoga cartas com custo +1"
+    text: "Ao resolver: Destrua outra carta em jogo.\nJoga cartas com custo +1"
   eastTemple:
     name: "Templo do Leste"
     type: "Struct"
@@ -110,7 +110,7 @@ cards:
     cost: 5
     text: "Custa -1 para cada Templo seu. Escolha 1 carta no deck, troque por 1 carta na mão, embaralhe"
   remember:
-    name: "Lembrar"
+    name: "Relembrar"
     type: "Spell"
     cost: 3
     text: "Troque 1 carta da sua mão com 1 carta em seu descarte"
@@ -128,7 +128,7 @@ cards:
     name: "Restaurar Passado"
     type: "Spell"
     cost: 7
-    text: "Jogue todos os seus cards que estão em seu descarte"
+    text: "Jogue todos as suas cartas que estão em seu descarte"
   rebalance:
     name: "Rebalancear"
     type: "Spell"
@@ -138,18 +138,18 @@ cards:
     name: "Ressonancia Temporal"
     type: "Spell"
     cost: 5
-    text: "Se você tem pelo menos 5 cards em pilhas diferentes: Ganhe +10 aura"
+    text: "Se você tem pelo menos 5 cartas em pilhas diferentes: Ganhe +10 aura"
   substitute:
     name: "Substituir"
     type: "Spell"
     cost: 1
-    text: "Destrua um card em jogo ou na timeline. Seu oponente joga o card do topo de seu deck"
+    text: "Destrua uma carta em jogo ou na timeline. Seu oponente joga a carta do topo de seu deck"
   copyCaster:
     name: "Conjurador Duplicado"
     type: "Caster"
     cost: 3
     text: "Ao resolver: Isto se torna uma cópia de outro Caster em jogo"
-  ex-caster:
+  ex-Caster:
     name: "Mago aposentado"
     type: "Caster"
     cost: 1
@@ -160,32 +160,92 @@ cards:
     cost: 6
     text: "Joga cartas com custo -2"
   seventhRitual:
-    name: "Seventh Ritual"
+    name: "Sétimo Ritual"
     type: "Spell"
     cost: 7
-    text: "Gain +7 aura"
+    text: "Ganhe +7 aura"
   materialize:
-    name: "Materialize"
+    name: "Materializar"
     type: "Spell"
     cost: 2
-    text: "Resolve a struct card on the timeline"
+    text: "Resolva um card Struct da timeline"
   abstract:
-    name: "Abstract"
+    name: "Abstrair"
     type: "Spell"
     cost: 1
-    text: "Choose a struct in play. It becomes a card with the type 'Concept'"
+    text: "Escolha um card Struct em jogo. Ele se torna um card do tipo Concept"
   auraRelay:
-    name: "Aura Relay"
+    name: "Transmitir aura"
     type: "Spell"
     cost: 'X'
-    text: "On shift: gain +1 aura if this lane is odd.\nOn resolve: gain +1 aura"
+    text: "Ao avançar: Ganhe +1 aura se esta pilha é impar.\nAo resolver: ganhe +1 aura"
   auraDrain:
-    name: "Aura Drain"
+    name: "Drenar aura"
     type: "Spell"
     cost: 'X'
-    text: "On shift: opponent gains -1 aura.\nOn resolve: gain -7 aura"
+    text: "Ao avançar: O oponente ganha -1 aura.\nAo resolver: ganhe -7 aura"
   getOnTrack:
-    name: "Get on Track"
+    name: "Realinhar"
     type: "Spell"
     cost: 1
-    text: "Destroy all spells with requeue. Gain priority"
+    text: "Destrua todos os cards com rejogar ou com custo X. Ganhe prioridade"
+  inviteTheVoid:
+    name: "Convite ao Vazio"
+    type: "Spell"
+    cost: 2
+    text: "Descarte\n\nSua\n\nMão"
+  timeInverter:
+    name: "Inversora do tempo"
+    type: "Struct"
+    cost: 5
+    text: "O tempo flui ao contrário\n(Os cards resolvem na pilha 7)"
+  famousDreamer:
+    name: "Sonhador Famoso"
+    type: "Caster"
+    cost: 4
+    text: "Ao resolver: Troque o card do topo do seu deck com um fora do jogo.\nJoga cartas com custo +2"
+  inviteTheDreams:
+    name: "Convite aos Sonhos"
+    type: "Spell"
+    cost: 7
+    text: "Troque sua mão pela mesma quantidade de cartas de fora do jogo"
+  ram:
+    name: "Australmático Restaurado"
+    type: "Struct"
+    cost: 3
+    text: "Você tem tamanho de mão +1"
+  magicPurger:
+    name: "Prisão de Magia"
+    type: "Struct"
+    cost: 3
+    text: "Ao resolver: Destrua todos os Casters em jogo e na timeline.\nCasters não podem ser jogados"
+  goblinMage:
+    name: "Goblin Mage"
+    type: "Caster"
+    cost: 4
+    text: "Joga cartas com custo +4.\nSe elu jogar [Concentrar-se] ou [Relembrar], dobre seus efeitos"
+  LostTemple:
+    name: "Templo Contorcido"
+    type: "Struct"
+    cost: 4
+    text: "Você tem +1 aura para cada um de seus outros templos"
+  AuraConverter:
+    name: "Conversor de Aura"
+    type: "Struct"
+    cost: 3
+    text: "Se uma carta que você controla fosse resolver, você pode descartá-la e ganhar +1 aura"
+  TwinMonks:
+    name: "Twin Monks"
+    type: "Caster"
+    cost: 7
+    text: "Pode Jogar dois cards por turno"
+  MonkTrainee:
+    name: "Monge em Treinamento"
+    type: "Caster"
+    cost: 1
+    text: "Só pode jogar cartas se você controla outro Caster. Joga cartas com custo +3"
+  MonkCalling:
+    name: "Chamado do Monge"
+    type: "Spell"
+    cost: 3
+    text: "Sacrifique um Caster não-Monge ou rejogue. Procure no deck por um Caster Monge e coloque em jogo"
