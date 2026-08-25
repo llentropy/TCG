@@ -50,7 +50,7 @@ func initialize(given_hand_position: Vector2,
 func update_selector_arrow_position():
 	var selected_object = navigation_list[navigation_index]
 	var offset = Vector2.UP * selected_object.texture.get_height()/selected_object.hframes
-	selector_arrow.global_position = navigation_list[navigation_index].global_position + offset
+	selector_arrow.global_position = (navigation_list[navigation_index].global_position + offset).floor()
 	
 func navigate(direction : String):
 	if self.current_navigation_state == NavigationStates.HALTED:

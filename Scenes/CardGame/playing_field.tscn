@@ -56,6 +56,7 @@ script = ExtResource("1_d7u1r")
 [node name="Timeline" parent="GameManager" unique_id=1173040738 instance=ExtResource("2_hk5gu")]
 z_index = -1000
 position = Vector2(44, 72)
+offset = Vector2(0.1, 0.1)
 
 [node name="CardIconsRoot" type="Node2D" parent="GameManager" unique_id=1870378618]
 
@@ -78,7 +79,9 @@ position = Vector2(150, 10)
 
 [node name="SelectorArrow" type="Sprite2D" parent="GameManager" unique_id=765161571]
 z_index = 500
+position = Vector2(8, 0)
 texture = ExtResource("6_vvuac")
+offset = Vector2(0.1, 0.1)
 hframes = 2
 
 [node name="Player" type="Node" parent="GameManager" unique_id=1737421195]

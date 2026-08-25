@@ -5,5 +5,6 @@
 
 [node name="CardIcon" type="Sprite2D" unique_id=1065787795]
 texture = ExtResource("1_7ls7p")
+offset = Vector2(0.1, 0.1)
 hframes = 2
 script = ExtResource("2_l07qq")
