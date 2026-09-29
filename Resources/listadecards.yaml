@@ -53,16 +53,16 @@ cards:
     name: "Fazenda de Aura"
     type: "Struct"
     cost: 5
-    text: "Ganhe +1 aura para cada card que jogar"
+    text: "No início de cada turno, ganhe +1 aura"
   hourglass:
     name: "Ampulheta"
     type: "Struct"
-    cost: 5
+    cost: 3
     text: "Suas cartas custam -1"
   ultraHourglass:
     name: "Ultra Ampulheta"
     type: "Struct"
-    cost: 6
+    cost: 4
     text: "Suas cartas custam -2"
   timeMachine:
     name: "Máquina do Tempo"
@@ -72,8 +72,8 @@ cards:
   auraSun:
     name: "Sol de Aura"
     type: "Struct"
-    cost: 7
-    text: "A cada turno, ganhe +1 aura para cada carta sua na timeline"
+    cost: 6
+    text: "No início de cada turno, ganhe +2 aura"
   boost:
     name: "Avançar"
     type: "Spell"
@@ -118,7 +118,7 @@ cards:
     name: "Concentrar-se"
     type: "Spell"
     cost: 2
-    text: "Ganhe +3 aura"
+    text: "Ganhe +2 aura"
   corruptSanctuary:
     name: "Santuario Corrompido"
     type: "Struct"
@@ -127,8 +127,8 @@ cards:
   restorePast:
     name: "Restaurar Passado"
     type: "Spell"
-    cost: 7
-    text: "Jogue todos as suas cartas que estão em seu descarte"
+    cost: 6
+    text: "Resolva todas as cartas que estão em seu descarte"
   rebalance:
     name: "Rebalancear"
     type: "Spell"
@@ -157,23 +157,23 @@ cards:
   omegaMage:
     name: "Mago Omega"
     type: 'Caster'
-    cost: 6
+    cost: 5
     text: "Joga cartas com custo -2"
   seventhRitual:
     name: "Sétimo Ritual"
     type: "Spell"
-    cost: 7
+    cost: 6
     text: "Ganhe +7 aura"
   materialize:
     name: "Materializar"
     type: "Spell"
-    cost: 2
-    text: "Resolva um card Struct da timeline"
+    cost: 1
+    text: "Resolva uma carta Struct da timeline"
   abstract:
     name: "Abstrair"
     type: "Spell"
     cost: 1
-    text: "Escolha um card Struct em jogo. Ele se torna um card do tipo Concept"
+    text: "Escolha uma carta Struct em jogo. Ele se torna uma carta do tipo Concept sem texto enquanto estiver em jogo"
   auraRelay:
     name: "Transmitir aura"
     type: "Spell"
@@ -182,13 +182,13 @@ cards:
   auraDrain:
     name: "Drenar aura"
     type: "Spell"
-    cost: 'X'
-    text: "Ao avançar: O oponente ganha -1 aura.\nAo resolver: ganhe -7 aura"
+    cost: '1'
+    text: "O oponente ganha -1 aura e você ganha +1 aura."
   getOnTrack:
     name: "Realinhar"
     type: "Spell"
     cost: 1
-    text: "Destrua todos os cards com rejogar ou com custo X. Ganhe prioridade"
+    text: "Destrua todos as cartas com rejogar. Ganhe +1 aura. Ganhe a prioridade"
   inviteTheVoid:
     name: "Convite ao Vazio"
     type: "Spell"
@@ -197,8 +197,8 @@ cards:
   timeInverter:
     name: "Inversora do tempo"
     type: "Struct"
-    cost: 5
-    text: "O tempo flui ao contrário\n(Os cards resolvem na pilha 7)"
+    cost: 2
+    text: "O tempo flui ao contrário\n(As cartas resolvem depois da pilha 7)"
   famousDreamer:
     name: "Sonhador Famoso"
     type: "Caster"
@@ -207,7 +207,7 @@ cards:
   inviteTheDreams:
     name: "Convite aos Sonhos"
     type: "Spell"
-    cost: 7
+    cost: 6
     text: "Troque sua mão pela mesma quantidade de cartas de fora do jogo"
   ram:
     name: "Australmático Restaurado"
@@ -220,10 +220,10 @@ cards:
     cost: 3
     text: "Ao resolver: Destrua todos os Casters em jogo e na timeline.\nCasters não podem ser jogados"
   goblinMage:
-    name: "Goblin Mage"
+    name: "Mago Goblin"
     type: "Caster"
     cost: 4
-    text: "Joga cartas com custo +4.\nSe elu jogar [Concentrar-se] ou [Relembrar], dobre seus efeitos"
+    text: "Joga cartas com custo +4.\nSe elu jogar [Concentrar-se], [Relembrar] ou [Abstrair], dobre seus efeitos"
   LostTemple:
     name: "Templo Contorcido"
     type: "Struct"
@@ -234,11 +234,6 @@ cards:
     type: "Struct"
     cost: 3
     text: "Se uma carta que você controla fosse resolver, você pode descartá-la e ganhar +1 aura"
-  TwinMonks:
-    name: "Twin Monks"
-    type: "Caster"
-    cost: 7
-    text: "Pode Jogar dois cards por turno"
   MonkTrainee:
     name: "Monge em Treinamento"
     type: "Caster"
@@ -248,4 +243,34 @@ cards:
     name: "Chamado do Monge"
     type: "Spell"
     cost: 3
-    text: "Sacrifique um Caster não-Monge ou rejogue. Procure no deck por um Caster Monge e coloque em jogo"
+    text: "Ganhe +1 aura. Procure no deck por um Caster Monge e coloque em jogo"
+  SpellMaster:
+    name: "Mestre de Magias"
+    type: "Caster"
+    cost: 2
+    text: "Só pode jogar cartas Spell"
+  StructMaster:
+    name: "Mestre Construtor"
+    type: "Caster"
+    cost: 2
+    text: "Só pode jogar cartas Struct"
+  TimelineCleansing:
+    name: "Limpeza da timeline"
+    type: "Spell"
+    cost: 1
+    text: "Escolha uma coluna da timeline. Destrua todas as cartas na coluna escolhida"
+  Conceptualize:
+    name: "Conceptualizar" 
+    type: "Spell"
+    cost: 3
+    text: "Cada Struct em jogo de seu oponente se torna do tipo Concept e perde seu texto até o fim do próximo turno"
+  Refresh:
+    name: "Refrescar"
+    type: "Spell"
+    cost: 2
+    text: "Embaralhe seu descarte em seu deck. Ganhe +1 aura"
+  SpellPurge:
+    name: "Expulsão de Magia"
+    type: "Spell"
+    cost: 4
+    text: "Destrua cada carta splell de seu oponente na timeline"
