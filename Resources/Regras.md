@@ -24,7 +24,7 @@ Os jogadores jogam os turnos ao mesmo tempo. A cada turno, a sequência de açõ
 5. É checado se um jogador possui 10 de aura ou mais e, se for o caso, elu ganha o jogo. Se mais de um jogador possuir 10 ou mais de aura, ganha o que tiver mais aura. Se ambos possuírem a mesma quantidade de aura, o jogo termina em empate.
 6. Cartas que possuem efeitos no fim do turno resolvem seus efeitos.
 
-## Regras adicionais
+## Regras gerais
 
 01. Uma carta não pode ter seu custo reduzido abaixo de 0, ou aumentado acima de 6.
 02. Caso um jogador tente comprar uma carta e não consiga, seu oponente ganha +1 aura.
@@ -35,6 +35,6 @@ Os jogadores jogam os turnos ao mesmo tempo. A cada turno, a sequência de açõ
     - As cartas sacrificadas.
     - As cartas descartadas.
 05. Os jogadores possuem um reservatório de aura. Efeitos que dizem "O jogador _ganha_ +/- X aura" adicionam aura a essa reserva.
-06. Efeitos que dizem "O jogador _tem_ +/- X aura" não a acrescentam ao reservatório de aura e são considerados efeitos atribuição de aura. 
+06. Efeitos que dizem "O jogador _tem_ +/- X aura" não a acrescentam ao reservatório de aura e são considerados efeitos de atribuição de aura. 
 07. A aura total do jogador é calculada somando-se a aura acumulada em seu reservatório e a aura atribuída através de efeitos estáticos.
-08. Efeitos que dizem "O jogador _ganha_ -X aura" só podem remover aura caso o jogador tenha alguma em seu reservatório. Esses efeitos não interagem com os efeitos de atribuição de aura, mencionados na regra adicional **06**
+08. Efeitos que dizem "O jogador _ganha_ -X aura" só podem remover aura caso o jogador tenha alguma em seu reservatório. Esses efeitos não interagem com os efeitos de atribuição de aura, mencionados na regra geral **06**. Por exemplo, um jogador controla um \[Templo do Leste\], que diz "Você tem +1 aura" e seu oponente resolve a carta \[Drenar Aura\]. O jogador em questão não perde aura porque a única aura que ele possui é devida ao efeito de atribuição do \[Templo do Leste\].

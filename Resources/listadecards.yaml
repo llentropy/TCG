@@ -180,7 +180,7 @@ cards:
     cost: 'X'
     text: "Ao avançar: Ganhe +1 aura se esta pilha é impar.\nAo resolver: ganhe +1 aura"
   auraDrain:
-    name: "Drenar aura"
+    name: "Drenar Aura"
     type: "Spell"
     cost: '1'
     text: "O oponente ganha -1 aura e você ganha +1 aura."
