@@ -34,3 +34,7 @@ Os jogadores jogam os turnos ao mesmo tempo. A cada turno, a sequência de açõ
     - As cartas destruídas por qualquer refeito.
     - As cartas sacrificadas.
     - As cartas descartadas.
+05. Os jogadores possuem um reservatório de aura. Efeitos que dizem "O jogador _ganha_ +/- X aura" adicionam aura a essa reserva.
+06. Efeitos que dizem "O jogador _tem_ +/- X aura" não a acrescentam ao reservatório de aura e são considerados efeitos atribuição de aura. 
+07. A aura total do jogador é calculada somando-se a aura acumulada em seu reservatório e a aura atribuída através de efeitos estáticos.
+08. Efeitos que dizem "O jogador _ganha_ -X aura" só podem remover aura caso o jogador tenha alguma em seu reservatório. Esses efeitos não interagem com os efeitos de atribuição de aura, mencionados na regra adicional **06**

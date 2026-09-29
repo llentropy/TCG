@@ -274,3 +274,8 @@ cards:
     type: "Spell"
     cost: 4
     text: "Destrua cada carta splell de seu oponente na timeline"
+  Auralize:
+    name: "Auralizar"
+    type: "Spell"
+    cost: 1
+    text: "Destrua uma carta em jogo ou na timeline. Seu oponente ganha +2 aura"
